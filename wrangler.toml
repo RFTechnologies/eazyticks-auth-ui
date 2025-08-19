@@ -1,0 +1,12 @@
+name = "eazyticks-auth-ui"
+compatibility_date = "2025-08-19"
+
+[site]
+bucket = "./dist"
+
+[build]
+command = "npm run build"
+output_dir = "dist"
+
+[env.production]
+# Add production-specific settings here
