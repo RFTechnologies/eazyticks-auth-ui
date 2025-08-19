@@ -6,17 +6,7 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        primary: 'var(--color-primary)',
-        primaryHeaderBg: 'var(--primaryHeaderBgclr)',
-        primaryHeaderText: 'var(--primaryHeaderTextclr)',
-        secondaryHeaderBg: 'var(--secondaryHeaderBgclr)',
-        secondaryHeaderText: 'var(--secondaryHeaderTextclr)',
-        primaryFooterBg: 'var(--primaryFooterBgClr)',
-        primaryFooterText: 'var(--primaryFooterTextClr)',
-        colorThemePrimary: 'var(--colorThemePrimary)',
-        colorThemePrimaryText: 'var(--colorThemePrimaryText)',
-        colorThemeSecondary: 'var(--colorThemeSecondary)',
-        colorThemeSecondaryText: 'var(--colorThemeSecondaryText)',
+        primary: 'var(--color-primary)'
       },
       fontFamily: {
         primary: ['Poppins', 'sans-serif'],
