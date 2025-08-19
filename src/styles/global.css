@@ -1,1 +1,101 @@
-@import "tailwindcss";
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --colorThemePrimary: #f85431;
+  --colorThemePrimaryText: #ffffff;
+  --colorThemeSecondary: #232323;
+  --colorThemeSecondaryText: #ffffff;
+  --colorThemeAmber: rgb(252 211 77 / 1);
+  --colorTicketSold: #c49639;
+  --colorTicketInCart: blue;
+  --swiper-theme-color: var(--colorThemePrimary);
+  /* Header Colors */
+  --primaryHeaderBgclr: transparent;
+  --primaryHeaderTextclr: #ffffff;
+  --secondaryHeaderBgclr: #fafafa;
+  --secondaryHeaderTextclr: #000000;
+  /* Footer Colors */
+  --primaryFooterBgClr: #232323;
+  --primaryFooterTextClr: #ffffff;
+  /* Buttons Colors */
+  --colorPrimaryBtnText: #ffffff;
+  --colorPrimaryBtnBackground: var(--colorThemePrimary);
+  --colorPrimaryBtnDisabledBackground: #dd6145;
+  --colorPrimaryBtnBackgroundHover: #f74620;
+
+  --colorSecondaryBtnText: #ffffff;
+  --colorSecondaryBtnBackground: #232323;
+  --colorOutlineBtnText: #ffffff;
+  --colorOutlineBtnBackground: #000000;
+  /* Fonts */
+  --primaryFont: var(--font-poppins);
+  /* Search Banners Colors */
+  --colorIcons: var(--colorThemePrimary);
+  --footerBackgroundColor: #232323;
+  --footerTextColor: #ffffff;
+}
+
+@layer base {
+  body {
+    font-size: 16px;
+    font-family: var(--font-primary);
+    line-height: normal;
+  }
+
+  html,
+  body {
+    @apply max-w-full overflow-x-hidden;
+  }
+  .h1,
+  h1 {
+    @apply text-3xl md:text-6xl font-bold leading-tight tracking-widest;
+  }
+
+  .h2,
+  h2 {
+    @apply text-3xl sm:text-5xl font-extrabold leading-tight text-gray-800;
+  }
+
+  .h3,
+  h3 {
+    @apply sm:text-4xl text-2xl font-bold leading-10;
+  }
+
+  label {
+    @apply block;
+  }
+  .input--field,
+  input {
+    @apply block w-full rounded border border-gray-300 outline-none px-2 py-1.5 text-gray-900 placeholder:text-gray-500 sm:text-sm sm:leading-6 focus:border-gray-600 placeholder:text-sm;
+  }
+  .checkbox--field {
+    @apply relative shrink-0 appearance-none w-4 h-4 border-2 border-gray-500 rounded-sm bg-white checked:bg-blue-800 checked:border-0 focus:outline-none focus:ring-offset-0 focus:ring-2 focus:ring-blue-100;
+  }
+  .select--field {
+    @apply block w-full rounded border border-gray-300 outline-none px-2 py-1.5 text-gray-900 placeholder:text-gray-500 sm:text-sm sm:leading-6 focus:border-gray-600;
+  }
+  [type="text"]:focus,
+  input:where(:not([type])):focus,
+  [type="email"]:focus,
+  [type="url"]:focus,
+  [type="password"]:focus,
+  [type="number"]:focus,
+  [type="date"]:focus,
+  [type="datetime-local"]:focus,
+  [type="month"]:focus,
+  [type="search"]:focus,
+  [type="tel"]:focus,
+  [type="time"]:focus,
+  [type="week"]:focus,
+  [multiple]:focus,
+  textarea:focus,
+  select:focus {
+    @apply focus:ring-0 focus:outline-none;
+  }
+  .select_field {
+    @apply px-2 py-[7px];
+  }
+}

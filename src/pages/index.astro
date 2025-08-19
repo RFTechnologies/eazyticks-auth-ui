@@ -1,11 +1,19 @@
 ---
-import Welcome from '../components/Welcome.astro';
-import Layout from '../layouts/Layout.astro';
+import Layout from "@/layouts/Layout.astro";
 
 // Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
 // Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
 ---
 
 <Layout>
-	<Welcome />
+  <div class="container mx-auto px-4 py-8">
+    <h1 class="text-4xl font-bold my-8">pages list</h1>
+    <ul class="space-y-2">
+      <li><a href="/login">login page</a></li>
+      <li><a href="/forget-password">forget password</a></li>
+      <li><a href="/reset-password">reset password</a></li>
+      <li><a href="/email-confirmation">email confirmation</a></li>
+      <li><a href="/email-otp">email otp page</a></li>
+    </ul>
+  </div>
 </Layout>

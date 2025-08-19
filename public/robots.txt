@@ -1,0 +1,3 @@
+# Eazyticks Front-End App in Next.js
+User-agent: *
+Disallow: /
